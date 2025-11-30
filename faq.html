@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Вопросы и ответы — КулинариЯ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    /* сюда тоже можно полностью скопировать <style> из index.html */
+    body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#fffaf5;color:#222;line-height:1.6;margin:0}
+    a{text-decoration:none;color:inherit}
+    header{background:linear-gradient(135deg,#ffb347,#ffcc33);padding:20px 16px;position:sticky;top:0;z-index:10;box-shadow:0 2px 8px rgba(0,0,0,.08);}
+    .container{max-width:900px;margin:0 auto;padding:0 24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .logo{font-weight:800;letter-spacing:.04em;font-size:18px;text-transform:uppercase}
+    .nav-links{display:flex;flex-wrap:wrap;gap:12px;font-size:14px}
+    .nav-links a{opacity:.9}
+    .nav-links a:hover{text-decoration:underline;opacity:1}
+    .btn{display:inline-block;padding:10px 20px;border-radius:999px;border:1px solid rgba(0,0,0,.15);background:transparent;cursor:pointer;font-weight:600;font-size:14px}
+    main{padding:32px 0;}
+    .pill-title{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#777;margin-bottom:6px}
+    .section-title{font-size:24px;font-weight:700;margin-bottom:16px}
+    .faq-list{display:flex;flex-direction:column;gap:12px;margin-top:16px;}
+    .faq-item{background:#fff;border-radius:14px;padding:12px 14px;border:1px solid rgba(0,0,0,.06);box-shadow:0 4px 10px rgba(0,0,0,.04);}
+    .faq-q{font-weight:600;margin-bottom:4px;}
+    .faq-a{font-size:14px;}
+    footer{background:#111;color:#eee;padding:18px 0;font-size:13px;margin-top:32px}
+    @media(max-width:768px){
+      .nav{flex-direction:column;align-items:flex-start;gap:8px}
+      .container{padding:0 16px}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">КУЛИНАРИЯ</div>
+    <nav class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="teachers.html">Преподаватели</a>
+      <a href="faq.html">Вопросы</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
+    <a href="index.html#contacts" class="btn">Записаться</a>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <p class="pill-title">FAQ</p>
+    <h1 class="section-title">Часто задаваемые вопросы</h1>
+    <p>
+      Здесь собраны основные вопросы родителей о детской кулинарной школе «КулинариЯ».
+    </p>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">Насколько безопасны занятия на кухне?</div>
+        <div class="faq-a">
+          Перед стартом каждого потока дети проходят инструктаж по технике безопасности, а работа с ножами и плитой идёт только под контролем взрослых.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Что нужно брать ребёнку с собой на занятия?</div>
+        <div class="faq-a">
+          Всё необходимое — продукты, инвентарь и фартуки — предоставляет школа. С собой достаточно сменной обуви и хорошего настроения.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Можно ли присутствовать родителям?</div>
+        <div class="faq-a">
+          В начале и в конце занятия родители могут зайти в зал, сделать фото и задать вопросы преподавателям. Основная часть урока проходит без взрослых, чтобы детям было проще сосредоточиться.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Как организована оплата и длительность курса?</div>
+        <div class="faq-a">
+          Формат и стоимость определяются в рамках рекламного проекта: можно выбрать разовое посещение или абонемент на несколько занятий выходного дня.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Что ребёнок получает после завершения курса?</div>
+        <div class="faq-a">
+          Кулинарную книгу с рецептами, фотографии с занятий и базовые навыки работы с продуктами, сервировкой и командным взаимодействием.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q">Можно ли адаптировать программу под особые запросы?</div>
+        <div class="faq-a">
+          В рамках проекта предусмотрены выездные мастер‑классы и семейные форматы, которые можно настроить под конкретный запрос группы.
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:center;">
+    <span>© Детская кулинарная школа «КулинариЯ», учебный проект.</span>
+    <span>Сайт создан в рамках учебной практики по рекламе.</span>
+  </div>
+</footer>
+
+</body>
+</html>

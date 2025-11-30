@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Преподаватели — КулинариЯ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      background:#fffaf5;
+      color:#222;
+      line-height:1.6;
+    }
+    a{text-decoration:none;color:inherit}
+    img{max-width:100%;display:block}
+
+    header{
+      background:linear-gradient(135deg,#ffb347,#ffcc33);
+      padding:20px 16px;position:sticky;top:0;z-index:10;
+      box-shadow:0 2px 8px rgba(0,0,0,.08);
+    }
+    .container{max-width:1280px;margin:0 auto;padding:0 24px}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .logo{font-weight:800;letter-spacing:.04em;font-size:18px;text-transform:uppercase}
+    .nav-links{display:flex;flex-wrap:wrap;gap:12px;font-size:14px}
+    .nav-links a{opacity:.9}
+    .nav-links a:hover{opacity:1;text-decoration:underline}
+    .btn{
+      display:inline-block;padding:10px 20px;border-radius:999px;border:none;
+      cursor:pointer;font-weight:600;font-size:14px;
+      background:#ff6b35;color:#fff;
+      box-shadow:0 4px 10px rgba(255,107,53,.4);
+      transition:transform .15s ease,box-shadow .15s ease,background .2s;
+    }
+    .btn:hover{
+      transform:translateY(-1px) scale(1.02);
+      box-shadow:0 6px 14px rgba(255,107,53,.45);
+    }
+    .btn-outline{
+      background:transparent;color:#222;border:1px solid rgba(0,0,0,.15);box-shadow:none;
+    }
+    .btn-outline:hover{background:rgba(255,255,255,.6)}
+
+    section{padding:36px 0}
+    section:nth-of-type(even){background:#fff}
+    section:nth-of-type(odd){background:#fffaf5}
+    .section-title{font-size:22px;font-weight:700;margin-bottom:16px}
+    .pill-title{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:#777;margin-bottom:6px}
+    .cols{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:28px;align-items:flex-start}
+    .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;font-size:14px}
+    .card{background:#fff;border-radius:16px;padding:12px 14px;border:1px solid rgba(0,0,0,.06);transition:transform .18s,box-shadow .18s}
+    .card:hover{transform:translateY(-3px);box-shadow:0 8px 20px rgba(0,0,0,.12)}
+    .card h3{font-size:18px;margin-bottom:6px}
+    .card ul{padding-left:18px;font-size:14px}
+    .card ul li{margin-bottom:4px}
+
+    footer{background:#111;color:#eee;padding:18px 0;font-size:13px;margin-top:8px}
+    footer a{color:#ffb347}
+
+    /* Анимации появления */
+    @keyframes fadeUp {
+      0% { opacity:0; transform: translateY(20px); }
+      100% { opacity:1; transform: translateY(0); }
+    }
+    .animate-on-scroll{
+      opacity:0;
+      transform:translateY(20px);
+      transition:opacity .6s ease,transform .6s ease;
+    }
+    .animate-on-scroll.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+
+    @media(max-width:768px){
+      header{position:static}
+      .nav{flex-direction:column;align-items:flex-start;gap:8px}
+      .container{padding:0 16px}
+    }
+    @media(max-width:480px){
+      .section-title{font-size:20px;}
+      .card{padding:10px 12px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div class="logo">КУЛИНАРИЯ</div>
+    <nav class="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="teachers.html">Преподаватели</a>
+      <a href="faq.html">Вопросы</a>
+      <a href="index.html#contacts">Контакты</a>
+    </nav>
+    <button class="btn btn-outline" onclick="window.location.href='index.html#contacts'">Записаться</button>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="container animate-on-scroll">
+      <p class="pill-title">Команда школы</p>
+      <h1 class="section-title">Шеф‑повара и наставники «КулинариЯ»</h1>
+      <p>
+        Занятия ведут практикующие повара и кондитеры с опытом работы в лучших заведениях города.
+        Эта страница показывает, кто именно будет работать с детьми на занятиях.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container grid-2 animate-on-scroll">
+      <div class="card">
+        <h3>Анна Петрова</h3>
+        <p style="font-size:14px;margin-bottom:6px;">Шеф‑кондитер, опыт 8 лет.</p>
+        <p style="font-size:14px;margin-bottom:6px;">
+          Ведёт занятия по десертам и капкейк‑шоу, учит аккуратности и красивой подаче.
+        </p>
+        <ul>
+          <li>Специализация: украшение капкейков и тортов.</li>
+          <li>Любимое занятие с детьми: создание праздничных десертов.</li>
+          <li>Любимое блюдо: морковный кейк с крем‑сыром.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Илья Смирнов</h3>
+        <p style="font-size:14px;margin-bottom:6px;">Шеф горячего цеха, опыт 10 лет.</p>
+        <p style="font-size:14px;margin-bottom:6px;">
+          Проводит занятия по основным блюдам и семейным ужинам, показывает базовые приёмы шеф‑повара.
+        </p>
+        <ul>
+          <li>Специализация: горячие блюда и кухня для всей семьи.</li>
+          <li>Любимое занятие: командное приготовление ужина.</li>
+          <li>Любимое блюдо: лазанья с домашним соусом.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Мария Ким</h3>
+        <p style="font-size:14px;margin-bottom:6px;">Фуд‑стилист, кулинарный блогер.</p>
+        <p style="font-size:14px;margin-bottom:6px;">
+          Отвечает за оформление блюд и фотосъёмку, помогает детям красиво подать своё блюдо.
+        </p>
+        <ul>
+          <li>Специализация: сервировка и декор.</li>
+          <li>Любимое занятие: фотосессия с готовыми блюдами.</li>
+          <li>Любимое блюдо: тарт с сезонными фруктами.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Алексей Орлов</h3>
+        <p style="font-size:14px;margin-bottom:6px;">Повар‑универсал, наставник подростков.</p>
+        <p style="font-size:14px;margin-bottom:6px;">
+          Ведёт старшие группы, показывает более сложные техники и помогает ребятам работать в команде.
+        </p>
+        <ul>
+          <li>Специализация: кухня для подростков 13–18 лет.</li>
+          <li>Любимое занятие: разработка авторских закусок.</li>
+          <li>Любимое блюдо: паста с соусом песто.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container animate-on-scroll">
+      <p class="pill-title">Безопасность</p>
+      <h2 class="section-title">Инструктаж и сопровождение на каждом шаге</h2>
+      <p>
+        Перед началом занятий дети проходят инструктаж по технике безопасности и правилам работы на кухне.
+        Наставники постоянно рядом и контролируют работу с ножами, плитой и горячими поверхностями.
+      </p>
+      <p style="margin-top:8px;">
+        Небольшие группы позволяют уделить внимание каждому ребёнку и создать дружественную атмосферу.
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container" style="display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:center;">
+    <span>© Детская кулинарная школа «КулинариЯ», учебный проект.</span>
+    <span>Сайт создан в рамках учебной практики по рекламе.</span>
+  </div>
+</footer>
+
+<script>
+  const animated = document.querySelectorAll('.animate-on-scroll');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.2 });
+  animated.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
